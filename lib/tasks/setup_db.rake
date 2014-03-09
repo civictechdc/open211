@@ -2,16 +2,17 @@ require 'json'
 
 task :setup_db => [
   :load_cip_data,
-  :load_farmers_markets,
+  #:load_farmers_markets,
   :create_categories]
 
 task :load_cip_data => :environment do
   puts "===> Populating the DB with San Mateo County, CA data."
   puts "===> Hang tight, this will take a few seconds..."
 
-  file = "data/sample_data.json"
+  file = "data/all_json.json"
 
   File.open(file).each do |line|
+
     data_item = JSON.parse(line)
     org = Organization.create!(data_item)
 

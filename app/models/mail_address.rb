@@ -15,14 +15,14 @@ class MailAddress
   field :state
   field :zip
 
-  validates_presence_of :street, :city, :state, :zip
+  #validates_presence_of :street, :city, :state, :zip
 
-  validates_length_of :state, :maximum => 2, :minimum => 2
+  #validates_length_of :state, :maximum => 2, :minimum => 2
 
-  extend ValidatesFormattingOf::ModelAdditions
-  validates_formatting_of :zip, using: :us_zip,
-                            allow_blank: true,
-                            message: "%{value} is not a valid ZIP code"
+  #extend ValidatesFormattingOf::ModelAdditions
+  #validates_formatting_of :zip, using: :us_zip,
+                            # allow_blank: true,
+                            # message: "%{value} is not a valid ZIP code"
 
   entity do
     expose :attention, :unless => lambda { |o,_| o.attention.blank? }

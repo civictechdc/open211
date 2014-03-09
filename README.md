@@ -1,3 +1,17 @@
+###Noah codeforamerica DC Edits
+
+1. Changed .ruby-version to 2.1.0 to match local machine
+2. Changed ruby in gemfile to 2.1.0
+3. Commented out most validations in models:
+  + address
+  + contact
+  + lcoation
+  + mail_address
+  + service
+4. Removed load_farmers_markets task from lib/tasks/setup_db.rake
+  + changed import file to dc data
+
+
 [![Stories in Ready](https://badge.waffle.io/codeforamerica/ohana-api.png?label=ready)](https://waffle.io/codeforamerica/ohana-api) [![Build Status](https://travis-ci.org/codeforamerica/ohana-api.png?branch=master)](https://travis-ci.org/codeforamerica/ohana-api)
 
 

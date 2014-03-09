@@ -39,7 +39,7 @@ class Service
     format: { with: %r{\Ahttps?://([^\s:@]+:[^\s:@]*@)?[A-Za-z\d\-]+(\.[A-Za-z\d\-]+)+\.?(:\d{1,5})?([\/?]\S*)?\z}i,
               message: "Please enter a valid URL" } }
 
-  validate :service_area_format, :keyword_format
+  #validate :service_area_format, :keyword_format
 
   def service_area_format
     if service_areas.is_a?(String)

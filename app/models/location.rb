@@ -87,31 +87,31 @@ class Location
   # Farmers' Market (i.e. it contains a "market_match" field), then it is
   # allowed to have an empty description.
   validates_presence_of :name
-  validates_presence_of :description, :short_desc,
-    :unless => Proc.new { |loc| loc.attributes.include?("market_match") }
-  validate :address_presence
+  #validates_presence_of :description, :short_desc,
+    # :unless => Proc.new { |loc| loc.attributes.include?("market_match") }
+  #validate :address_presence
 
 
-  validates_length_of :short_desc, :maximum => 200
+  #validates_length_of :short_desc, :maximum => 200
 
   # These are custom validations for values within arrays and hashes.
   # For example, the faxes field is an array that can contain multiple faxes.
   # To be able to validate each fax number in the array, we have to use a
   # custom array validator.
   # Both custom validators are defined in app/validators/
-  validates :urls, array: {
-    format: { with: %r{\Ahttps?://([^\s:@]+:[^\s:@]*@)?[A-Za-z\d\-]+(\.[A-Za-z\d\-]+)+\.?(:\d{1,5})?([\/?]\S*)?\z}i,
-              message: "%{value} is not a valid URL" } }
+  #validates :urls, array: {
+    # format: { with: %r{\Ahttps?://([^\s:@]+:[^\s:@]*@)?[A-Za-z\d\-]+(\.[A-Za-z\d\-]+)+\.?(:\d{1,5})?([\/?]\S*)?\z}i,
+    #           message: "%{value} is not a valid URL" } }
 
-  validates :emails, array: {
-    format: { with: /.+@.+\..+/i,
-              allow_blank: true,
-              message: "%{value} is not a valid email" } }
+  #validates :emails, array: {
+    # format: { with: /.+@.+\..+/i,
+    #           allow_blank: true,
+    #           message: "%{value} is not a valid email" } }
 
-  validates :phones, hash:  {
-    format: { with: /\A(\((\d{3})\)|\d{3})[ |\.|\-]?(\d{3})[ |\.|\-]?(\d{4})\z/,
-              allow_blank: true,
-              message: "%{value} is not a valid US phone number" } }
+  # validates :phones, hash:  {
+  #   format: { with: /\A(\((\d{3})\)|\d{3})[ |\.|\-]?(\d{3})[ |\.|\-]?(\d{4})\z/,
+  #             allow_blank: true,
+  #             message: "%{value} is not a valid US phone number" } }
 
   # validates :faxes, hash:  {
   #   format: { with: /\A(\((\d{3})\)|\d{3})[ |\.|\-]?(\d{3})[ |\.|\-]?(\d{4})\z/,
@@ -120,7 +120,7 @@ class Location
 
   after_validation :reset_coordinates, if: :address_blank?
 
-  validate :fax_format
+  #validate :fax_format
 
   def fax_format
     if faxes.is_a?(String)
@@ -497,15 +497,7 @@ class Location
 
   def self.smc_service_areas
     [
-      'San Mateo County','Atherton','Belmont','Brisbane','Burlingame','Colma',
-      'Daly City','East Palo Alto','Foster City','Half Moon Bay',
-      'Hillsborough','Menlo Park','Millbrae','Pacifica','Portola Valley',
-      'Redwood City','San Bruno','San Carlos','San Mateo',
-      'South San Francisco','Woodside','Broadmoor','Burlingame Hills',
-      'Devonshire','El Granada','Emerald Lake Hills','Highlands-Baywood Park',
-      'Kings Mountain','Ladera','La Honda','Loma Mar','Menlo Oaks','Montara',
-      'Moss Beach','North Fair Oaks','Palomar Park','Pescadero',
-      'Princeton-by-the-Sea','San Gregorio','Sky Londa','West Menlo Park'
+      'DC', 'District of Columbia','All Areas','Virginia'
     ]
   end
 
