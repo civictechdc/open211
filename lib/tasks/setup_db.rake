@@ -6,7 +6,7 @@ task :setup_db => [
   :create_categories]
 
 task :load_cip_data => :environment do
-  puts "===> Populating the DB with San Mateo County, CA data."
+  puts "===> Populating the DB with Washington, DC data."
   puts "===> Hang tight, this will take a few seconds..."
 
   file = "data/all_json.json"
