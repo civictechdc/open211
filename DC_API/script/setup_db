@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+echo "===> Setting up the DB."
+rake setup_db
+
+echo "===> Creating the DB indexes..."
+rake db:mongoid:create_indexes --quiet
+
+echo "===> Creating the Elasticsearch index..."
+script/tire --quiet

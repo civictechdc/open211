@@ -1,0 +1,35 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  enumerize:
+    location:
+      accessibility:
+        cd: "Information on CD"
+        deaf_interpreter: "Interpreter for the deaf"
+        disabled_parking: "Disabled Parking"
+        elevator: "Elevator"
+        ramp: "Ramp"
+        restroom: "Disabled Restroom"
+        tape_braille: "Information on tape or in Braille"
+        tty: "TTY"
+        wheelchair: "Wheelchair"
+        wheelchair_van: "Wheelchair-accessible van"
+      kind:
+        arts: "Arts"
+        clinics: "Clinics"
+        education: "Education"
+        entertainment: "Entertainment"
+        farmers_markets: "Farmers' Markets"
+        government: "Government"
+        human_services: "Human Services"
+        libraries: "Libraries"
+        museums: "Museums"
+        other: "Other"
+        parks: "Parks"
+        sports: "Sports"
+        test: "Test"
+
+
+
+
