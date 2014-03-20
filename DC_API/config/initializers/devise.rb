@@ -4,7 +4,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "registration@ohanapi.org"
+  config.mailer_sender = ""
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
@@ -247,7 +247,7 @@ Devise.setup do |config|
   # This was necessary after upgrading Devise from 3.0.3 to 3.1.0
   # http://blog.plataformatec.com.br/2013/08/devise-3-1-now-with-more-secure-defaults/
   if Rails.env.development? || Rails.env.test?
-    config.secret_key = '8615cc909c91b598763a62a225815abfd728327063baf6a1c15bbc7aacc747fd91c81e9a03b003af95c5a856de844738d26ae057b014ae6c2807c4f9168008ab'
+    config.secret_key = ''
   else
     config.secret_key = ENV['DEVISE_SECRET_KEY'] or raise "missing DEVISE_SECRET_KEY"
   end
