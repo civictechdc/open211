@@ -24,7 +24,7 @@ Recently at a Hack session in San Fransisco, a group of civic hackers used our d
 
 
 ###Help
-If your in DC, please join us and other civic hackers at [Code for DC](http://codefordc.org/)
+If you're in DC, please join us and other civic hackers at [Code for DC](http://codefordc.org/)
 
 Feel free to fork this project to improve or build your own!
 
