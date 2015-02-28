@@ -1,0 +1,15 @@
+{
+    "conformsTo": "https://raw.githubusercontent.com/codefordc/guides/master/using-civic.json/specification.md",
+    "status": "Alpha",
+    "contact": {
+        "name": "Greg Bloom",
+        "email": "bloom@codeforamerica.org",
+        "twitter": "@greggish"
+    },
+    "categories": [
+        {
+            "category": "Open Data"
+        }
+    ],
+    "moreInfo": "https://codefordc.github.io/open211/"
+}
