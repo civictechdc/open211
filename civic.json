@@ -1,5 +1,5 @@
 {
-    "conformsTo": "https://raw.githubusercontent.com/codefordc/guides/master/using-civic.json/specification.md",
+    "conformsTo": "http://codefordc.org/resources/specification.html",
     "status": "Alpha",
     "contact": {
         "name": "Greg Bloom",
