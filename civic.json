@@ -1,0 +1,15 @@
+{
+    "conformsTo": "http://codefordc.org/resources/specification.html",
+    "status": "Alpha",
+    "contact": {
+        "name": "Greg Bloom",
+        "email": "bloom@codeforamerica.org",
+        "twitter": "@greggish"
+    },
+    "categories": [
+        {
+            "category": "Open Data"
+        }
+    ],
+    "moreInfo": "https://codefordc.github.io/open211/"
+}
