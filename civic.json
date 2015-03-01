@@ -3,12 +3,29 @@
     "status": "Alpha",
     "contact": {
         "name": "Greg Bloom",
-        "email": "bloom@codeforamerica.org",
+        "email": "bloom@openreferral.org",
         "twitter": "@greggish"
     },
+     
+    "thumbnailURL": "https://docs.google.com/file/d/0B-5CZ4ZLjTHqal9jdm94TzdBNzg/preview",
+    "geography": "DC Metro Area",
+    "governmentPartner": {"Deputy Mayor of Health and Human Services":"http://dmhhs.dc.gov"},
+    "communityPartner": {"Bread for the City":"http://www.breadforthecity.org/"},
+    "type": "Communications Infrastructure",
+    "moreInfo": "https://docs.google.com/document/d/1j2IbSaBwj7jq0RmKqjTjcKv6oE1RiIvRu462NlnG5xs/edit",
+
+    "needs": [
+    {"need":"Ruby on Rails"},
+    {"need":"Information architecture"},
+    {"need":"UX"},
+    {"need":"systems-thinkers"},
+    {"need":"people with experience in social services, especially the District"}
+    ],
+    
     "categories": [
         {
             "category": "Open Data"
+            "category": "Social services",
         }
     ],
     "moreInfo": "https://codefordc.github.io/open211/"
