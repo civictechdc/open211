@@ -23,10 +23,8 @@
     ],
     
     "categories": [
-        {
-            "category": "Open Data"
-            "category": "Social services",
-        }
+        {"category": "Open Data"},
+        {"category": "Social services"}
     ],
     "moreInfo": "https://codefordc.github.io/open211/"
 }
