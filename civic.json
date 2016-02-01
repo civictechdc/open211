@@ -1,30 +1,44 @@
 {
-    "conformsTo": "http://codefordc.org/resources/specification.html",
-    "status": "Alpha",
+    "name": "Open 211", 
+    "description": "DC Open211", 
+    "license": "GPL-2.0", 
+    "status": "Alpha", 
+    "type": "Communications Infrastructure", 
+    "homepage": "https://openreferral.org/pilots/dc-open211/", 
+    "repository": "https://github.com/codefordc/open211", 
+    "thumbnail": "", 
+    "geography": [
+        "DC Metro Area"
+    ], 
     "contact": {
-        "name": "Greg Bloom",
-        "email": "bloom@openreferral.org",
-        "twitter": "@greggish"
-    },
-     
-    "thumbnailURL": "https://docs.google.com/file/d/0B-5CZ4ZLjTHqal9jdm94TzdBNzg/preview",
-    "geography": "DC Metro Area",
-    "governmentPartner": {"Deputy Mayor of Health and Human Services":"http://dmhhs.dc.gov"},
-    "communityPartner": {"Bread for the City":"http://www.breadforthecity.org/"},
-    "type": "Communications Infrastructure",
-    "moreInfo": "https://docs.google.com/document/d/1j2IbSaBwj7jq0RmKqjTjcKv6oE1RiIvRu462NlnG5xs/edit",
-
-    "needs": [
-    {"need":"Ruby on Rails"},
-    {"need":"Information architecture"},
-    {"need":"UX"},
-    {"need":"systems-thinkers"},
-    {"need":"people with experience in social services, especially the District"}
-    ],
-    
-    "categories": [
-        {"category": "Open Data"},
-        {"category": "Social services"}
-    ],
-    "moreInfo": "https://codefordc.github.io/open211/"
+        "name": "Greg Bloom", 
+        "email": "bloom@openreferral.org", 
+        "url": "https://twitter.com/@greggish"
+    }, 
+    "partners": [
+        {
+            "url": "http://dmhhs.dc.gov", 
+            "name": "Deputy Mayor of Health and Human Services", 
+            "email": ""
+        }, 
+        {
+            "url": "http://www.breadforthecity.org/", 
+            "name": "Bread for the City", 
+            "email": ""
+        }, 
+        {
+            "url": "http://codefordc.org", 
+            "name": "Code for DC", 
+            "email": ""
+        }
+    ], 
+    "data": [], 
+    "tags": [
+        "Open Data", 
+        "Social services"
+    ], 
+    "links": [
+        "https://codefordc.github.io/open211/"
+    ], 
+    "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schemas/schema-v1.json"
 }
